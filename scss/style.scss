@@ -195,6 +195,62 @@ main {
 /*************************** skills end **********************************/
 
 
+/*************************** projects  **********************************/
+
+.projects {
+
+    > h2 {
+        text-align: center;
+    }
+
+    .prjs-container {
+        border: 2px solid blue;
+        background-color: transparent;
+        width: 100%;
+        height: 600px;
+        perspective: 1000px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .prjs-card {
+        border: 2px solid black;
+        position: relative;
+        width: 15%;
+        height: 250px;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+
+        .prjs-card-front {
+            position: absolute;
+            width: 100%;   
+            height: 250px; 
+            backface-visibility: hidden;
+            background-color: gray;
+        }
+
+        .prjs-card-back {
+            position: absolute;
+            width: 100%;  
+            height: 250px;
+            backface-visibility: hidden;
+            background-color: lightgreen;
+            transform: rotateY(180deg);
+        }
+    }
+
+    .card-flip {
+        transform: rotateY(180deg);
+    }
+
+}
+      
+
+
+/*************************** projects end **********************************/
+
+
 
 /*************** do usunięcia  **********************/
 #test {
