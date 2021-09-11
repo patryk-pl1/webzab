@@ -2,10 +2,14 @@ $color-main: #347107;
 $color-main-second: #87c74f;
 $test: #559e11;
 
+body {
+    max-width: 1920px;
+}
+
 header#header-body {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 99;
 }
 
 .header-row {
@@ -75,6 +79,121 @@ header#header-body {
 img#img-phone {
     vertical-align: middle;
 }
+
+/***************************** main **********************************/
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.entry {
+    border: 2px solid black;
+    width: 100%;
+    min-height: 60vh;
+    background-image: url('../img/snow.gif');
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    .entry-offer {
+        position: relative;
+        grid-column: 1 / 13;
+        grid-row: 1 / 2;
+        background: white;
+        opacity: 0.8;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+        .entry-offer-content {
+            grid-column: 1 / 9;
+            grid-row: 1 / 2;
+            z-index: 2;
+            font-size: 2.5rem;
+            position: relative;
+            padding: 150px;
+            padding-left: 30px;
+            padding-top: 120px;
+            text-align: center;
+
+            div {
+                //position: absolute;
+                //top:
+                padding-right: 25%;
+                border: 2px solid black;
+            }
+        }
+
+        .entry-offer-skew {
+            background: white;
+            border: 2px solid blue;
+            //opacity: 0.8;
+            //width: 100%;
+            //height: 100%;
+            //position: absolute;
+            //top: 0;
+            //left: 40%;
+            //margin-left: 59%;
+            grid-column: 3 / 9;
+            grid-row: 1 / 2;
+            z-index: 1;
+            transform: skew(-35deg, 0deg);
+        }
+
+        .entry-art {
+            grid-column: 7 / 13;
+            grid-row: 1 / 2;
+            background-image: linear-gradient($color-main, 
+            lighten($color-main, 50%),
+            );
+            opacity: 0.8;
+            //transform: skew(-35deg, 0deg) translate(30%, 0);
+        }
+
+    }
+}
+
+
+/*************************** main end **********************************/
+
+/*************************** skills **************************************/
+
+.skills {
+    display: flex;
+    border: 2px solid black;
+    min-height: 450px;
+    align-items: center;
+    justify-content: space-around;
+
+    .skills-card {
+        border: 1px solid black;
+        height: 350px;
+        width: 20%;
+        text-align: center;
+        background-color: #f9f9f9;
+
+        span.title {
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-top: 10%;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        > div {
+            width: 85%;
+            margin: auto;
+        }
+    }
+
+    img {
+        height: 150px;
+        width: 150px;
+        margin-top: 10%;
+    }
+}
+
+/*************************** skills end **********************************/
+
 
 
 /*************** do usunięcia  **********************/
