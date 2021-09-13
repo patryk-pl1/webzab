@@ -221,6 +221,7 @@ main {
         height: 250px;
         transition: transform 1s;
         transform-style: preserve-3d;
+        cursor: pointer;
 
         .prjs-card-front {
             position: absolute;
