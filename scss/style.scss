@@ -250,6 +250,37 @@ main {
 
 
 /*************************** projects end **********************************/
+/***************************************************************************/
+/*************************** footer ********************************/
+
+
+#home-footer {
+    width: 100%;
+    background-color: darkblue;
+}
+
+.footer {
+    margin: auto;
+    width: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    .f-services {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    > div {
+        flex: 1 1 auto;
+    }
+
+}
+
+/*************************** footer end **********************************/
 
 
 
