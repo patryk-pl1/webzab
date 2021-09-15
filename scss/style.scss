@@ -1,6 +1,7 @@
 $color-main: #347107;
 $color-main-second: #87c74f;
 $test: #559e11;
+$header-height: 70px;
 
 body {
     max-width: 1920px;
@@ -14,19 +15,27 @@ header#header-body {
 
 .header-row {
     width: 100%;
-    height: 70px;
+    height: $header-height;
     background-color: white;
     padding-top: 5px;
     padding-bottom: 5px;
     //font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
-    border: 2px solid black;
+    border-bottom: 2px solid lightgray;
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: 1fr;
     align-items: center;
     a {
         text-decoration: none;
+    }
+
+    .logo {
+        margin-left: 15%;
+
+        img {
+            height: 60px;
+        }
     }
 }
 
@@ -39,9 +48,9 @@ header#header-body {
 .navbar {
     font-size: 1.2rem;
     color: black;
-    height: 100%;
+    height: $header-height;
     margin-right: 20px;
-    grid-column: 6 / span 4;
+    grid-column: 5 / span 4;
     display: flex;
     align-items: center;
     column-gap: 15px;
@@ -55,24 +64,53 @@ header#header-body {
         flex: 1 1 auto;
         text-align: center;
         color: inherit;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.7s;
+        //wysokosc linii dla elementow naglowka
+        line-height: $header-height * 0.5;
+        position: relative;
+
+        div {
+            opacity: 0;
+            border-bottom: 2px solid $color-main;
+            position: absolute;
+            left: 15%;
+            right: 15%;
+            transition: opacity 0.7s;
+        }
+
+        div#active {
+            opacity: 1;
+            border-bottom: 2px solid $color-main;
+            position: absolute;
+            left: 15%;
+            right: 15%;
+        }
     }
 
     a:hover {
         color: $color-main;
+
+        div {
+            opacity: 1;
+        }
     }
+   
 
 }
 
 #phone {
-    grid-column: 10 / -1;
+    grid-column: 9 / -1;
     background-image: linear-gradient($color-main, $color-main-second 65%);
     border-radius: 25px;
-    margin-right: 5px;
+    margin-right: 25%;
     text-align: center;
     font-size: 1.5rem;
 
     a {
         color: white;
+        font-size: 2rem;
     }
 }
 

@@ -17,7 +17,7 @@ header#header-body {
   padding-top: 5px;
   padding-bottom: 5px;
   font-family: Arial, Helvetica, sans-serif;
-  border: 2px solid black;
+  border-bottom: 2px solid lightgray;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[11];
@@ -33,6 +33,14 @@ header#header-body {
   text-decoration: none;
 }
 
+.header-row .logo {
+  margin-left: 15%;
+}
+
+.header-row .logo img {
+  height: 60px;
+}
+
 .logo {
   margin-left: 20px;
   display: inline-block;
@@ -44,11 +52,11 @@ header#header-body {
 .navbar {
   font-size: 1.2rem;
   color: black;
-  height: 100%;
+  height: 70px;
   margin-right: 20px;
-  -ms-grid-column: 6;
+  -ms-grid-column: 5;
   -ms-grid-column-span: 4;
-  grid-column: 6 / span 4;
+  grid-column: 5 / span 4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,24 +78,53 @@ header#header-body {
           flex: 1 1 auto;
   text-align: center;
   color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
+  line-height: 35px;
+  position: relative;
+}
+
+.navbar a div {
+  opacity: 0;
+  border-bottom: 2px solid #347107;
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s;
+}
+
+.navbar a div#active {
+  opacity: 1;
+  border-bottom: 2px solid #347107;
+  position: absolute;
+  left: 15%;
+  right: 15%;
 }
 
 .navbar a:hover {
   color: #347107;
 }
 
+.navbar a:hover div {
+  opacity: 1;
+}
+
 #phone {
-  grid-column: 10 / -1;
+  grid-column: 9 / -1;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#347107), color-stop(65%, #87c74f));
   background-image: linear-gradient(#347107, #87c74f 65%);
   border-radius: 25px;
-  margin-right: 5px;
+  margin-right: 25%;
   text-align: center;
   font-size: 1.5rem;
 }
 
 #phone a {
   color: white;
+  font-size: 2rem;
 }
 
 img#img-phone {
