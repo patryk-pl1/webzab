@@ -138,10 +138,11 @@ main {
 }
 
 .entry {
-  border: 2px solid black;
   width: 100%;
-  min-height: 60vh;
-  background-image: url("../img/snow.gif");
+  min-height: 80vh;
+  background-image: url("../img/20.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -165,14 +166,15 @@ main {
 }
 
 .entry .entry-offer .entry-offer-content {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 8;
-  grid-column: 1 / 9;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 7;
+  grid-column: 2 / 9;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
   z-index: 2;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  font-weight: bold;
   position: relative;
   padding: 150px;
   padding-left: 30px;
@@ -182,12 +184,16 @@ main {
 
 .entry .entry-offer .entry-offer-content div {
   padding-right: 25%;
-  border: 2px solid black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/grass.gif");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .entry .entry-offer .entry-offer-skew {
   background: white;
-  border: 2px solid blue;
   -ms-grid-column: 3;
   -ms-grid-column-span: 6;
   grid-column: 3 / 9;
