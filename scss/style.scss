@@ -2,6 +2,7 @@ $color-main: #347107;
 $color-main-second: #87c74f;
 $test: #559e11;
 $header-height: 70px;
+$section-min-height: 70vh;
 
 body {
     max-width: 1920px;
@@ -164,6 +165,25 @@ main {
                 -webkit-background-clip: text;
                 color: transparent;
             }
+
+            p {
+                font-size: 1.3rem;
+                color: black;
+                margin-top: 50px;
+            }
+
+            button {
+                margin-top: 50px;
+                padding: 20px;
+                border-radius: 15px;
+                font-size: 1.4rem;
+                font-weight: bold;
+                background-image: linear-gradient(to bottom right, $color-main, $color-main-second 55%);
+            }
+
+            button:hover {
+                background-image: linear-gradient(to bottom right, lighten($color-main,20%), lighten($color-main-second, 20%) 55%);
+            }
         }
 
         .entry-offer-skew {
@@ -185,7 +205,7 @@ main {
             grid-column: 7 / 13;
             grid-row: 1 / 2;
             background-image: linear-gradient($color-main, 
-            lighten($color-main, 50%),
+            lighten($color-main, 50%)
             );
             opacity: 0.8;
             //transform: skew(-35deg, 0deg) translate(30%, 0);
@@ -200,11 +220,26 @@ main {
 /*************************** skills **************************************/
 
 .skills {
+    min-height: 70vh;
+    //margin-top: 50px;
+
+    h2 {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color: $color-main;
+        font-size: 2rem;
+    }
+}
+
+.section-skills {
     display: flex;
-    border: 2px solid black;
-    min-height: 450px;
+    
     align-items: center;
     justify-content: space-around;
+    //background-image: linear-gradient($color-main, $color-main-second 50%);
+    //background-color: lighten(lightgray, 10%);
+    background-color: white;
 
     .skills-card {
         border: 1px solid black;
@@ -212,6 +247,7 @@ main {
         width: 20%;
         text-align: center;
         background-color: #f9f9f9;
+        background-color: lighten(lightgray, 12%);
 
         span.title {
             font-weight: bold;
@@ -241,15 +277,19 @@ main {
 
 .projects {
 
+    min-height: 70vh;
+    background-image: linear-gradient(to bottom right, lighten($color-main,20%), lighten($color-main-second, 20%) 55%);
+    padding-top: 50px;
+    margin-bottom: 50px;
+
     > h2 {
         text-align: center;
     }
 
-    .prjs-container {
-        border: 2px solid blue;
+    .prjs-container { 
         background-color: transparent;
         width: 100%;
-        height: 600px;
+        height: 500px;
         perspective: 1000px;
         display: flex;
         justify-content: space-around;

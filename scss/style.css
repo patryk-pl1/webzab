@@ -192,6 +192,27 @@ main {
   color: transparent;
 }
 
+.entry .entry-offer .entry-offer-content p {
+  font-size: 1.3rem;
+  color: black;
+  margin-top: 50px;
+}
+
+.entry .entry-offer .entry-offer-content button {
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#347107), color-stop(55%, #87c74f));
+  background-image: linear-gradient(to bottom right, #347107, #87c74f 55%);
+}
+
+.entry .entry-offer .entry-offer-content button:hover {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#60d10d), color-stop(55%, #bce09c));
+  background-image: linear-gradient(to bottom right, #60d10d, #bce09c 55%);
+}
+
 .entry .entry-offer .entry-offer-skew {
   background: white;
   -ms-grid-column: 3;
@@ -220,27 +241,39 @@ main {
 /*************************** main end **********************************/
 /*************************** skills **************************************/
 .skills {
+  min-height: 70vh;
+}
+
+.skills h2 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #347107;
+  font-size: 2rem;
+}
+
+.section-skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid black;
-  min-height: 450px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background-color: white;
 }
 
-.skills .skills-card {
+.section-skills .skills-card {
   border: 1px solid black;
   height: 350px;
   width: 20%;
   text-align: center;
   background-color: #f9f9f9;
+  background-color: #f2f2f2;
 }
 
-.skills .skills-card span.title {
+.section-skills .skills-card span.title {
   font-weight: bold;
   font-size: 1.3rem;
   margin-top: 10%;
@@ -248,12 +281,12 @@ main {
   display: inline-block;
 }
 
-.skills .skills-card > div {
+.section-skills .skills-card > div {
   width: 85%;
   margin: auto;
 }
 
-.skills img {
+.section-skills img {
   height: 150px;
   width: 150px;
   margin-top: 10%;
@@ -261,15 +294,22 @@ main {
 
 /*************************** skills end **********************************/
 /*************************** projects  **********************************/
+.projects {
+  min-height: 70vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#60d10d), color-stop(55%, #bce09c));
+  background-image: linear-gradient(to bottom right, #60d10d, #bce09c 55%);
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
 .projects > h2 {
   text-align: center;
 }
 
 .projects .prjs-container {
-  border: 2px solid blue;
   background-color: transparent;
   width: 100%;
-  height: 600px;
+  height: 500px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   display: -webkit-box;
