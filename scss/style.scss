@@ -364,6 +364,97 @@ main {
 
 /*************************** footer end **********************************/
 
+/*************************** contact page **********************************/
+.contact-main {
+        line-height: 1.6;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1em;
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .contact-brand {
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+}
+
+/*************************** contact-container  **********************************/
+.contact-container {
+    
+    background-image: linear-gradient(to bottom right, $color-main, $color-main-second 55%);
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .wrapper {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+    }
+
+    .wrapper > * {
+        padding: 1em;
+    }
+
+    .company-info {
+        border-bottom: 2px solid black;
+        h3, ul {
+            text-align: center;
+            margin: 0 0 1rem 0;
+        }
+    }
+
+    .contact {
+        
+        /* form styles */
+
+        form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        label {
+            display: block;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .full {
+            grid-column: 1 / 3;
+        }
+
+        button, input, textarea {
+            width: 100%;
+            padding: 1em;
+        }
+
+        button {
+            background: lightgray;
+            border: 0;
+            text-transform: uppercase;
+        }
+
+        button:hover, button:focus {
+            background: white;
+            cursor: pointer;
+            color: $color-main;
+            font-weight: bold;
+            outline: 0;
+        }
+
+    }
+}
+/*************************** contact-container end **********************************/
+
+/*************************** contact page end **********************************/
+
 
 
 /*************** do usunięcia  **********************/
