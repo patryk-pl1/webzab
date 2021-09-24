@@ -473,13 +473,13 @@ main {
   padding: 1em;
 }
 
-.contact-container .contact button {
+.contact-container .contact .submit {
   background: lightgray;
   border: 0;
   text-transform: uppercase;
 }
 
-.contact-container .contact button:hover, .contact-container .contact button:focus {
+.contact-container .contact .submit:hover, .contact-container .contact .submit:focus {
   background: white;
   cursor: pointer;
   color: #347107;

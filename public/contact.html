@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="/img/test3.png">
-    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="/scss/style.css" />
     <title>WebZab - Kontakt</title>
 </head>
 <body class="contact-body">
     <header id="header-body">
         <div class="header-row">
-            <div class="logo"><img src="./img/nazwa_firmy.png" alt="logo"></div>
+            <div class="logo"><img src="/img/nazwa_firmy.png" alt="logo"></div>
             <nav class="navbar">
-                <a href="index.html">
+                <a href="../index.html">
                     Główna
-                    <div id="active"></div> 
+                    <div></div> 
                 </a>
                 <a href="services.html">
                     Usługi
@@ -27,13 +27,13 @@
                 </a>
                 <a href="contact.html">
                     Kontakt
-                    <div></div>
+                    <div id="active"></div>
                 </a>
                 <div id="vert-separator"></div>
             </nav>
             <div id="phone">
                 <a  href="tel:">
-                    <img id="img-phone" src="./img/phone1.png" alt="telefon" />
+                    <img id="img-phone" src="/img/phone1.png" alt="telefon" />
                     000000000
                 </a>
             </div>
@@ -54,7 +54,7 @@
                     </div>
                     <div class="contact">
                         <h3>Napisz Do Nas</h3>
-                        <form>
+                        <form class="contact-form">
                             <p>
                                 <label>Imię</label>
                                 <input type="text" name="name">
@@ -76,7 +76,7 @@
                                 <textarea name="message" rows="5"></textarea>
                             </p>
                             <p class="full">
-                                <button>Wyślij</button>
+                                <input type="submit" class="submit" value="Wyślij">
                             </p>
                         </form>
                     </div>
@@ -85,6 +85,6 @@
         </section>
     </main>
 
-
+<script src="/js/app.js"></script>
 </body>
 </html>

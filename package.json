@@ -1,0 +1,29 @@
+{
+  "name": "webzab",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000w\u0000e\u0000b\u0000z\u0000a\u0000b\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patryk-pl1/webzab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patryk-pl1/webzab/issues"
+  },
+  "homepage": "https://github.com/patryk-pl1/webzab#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
